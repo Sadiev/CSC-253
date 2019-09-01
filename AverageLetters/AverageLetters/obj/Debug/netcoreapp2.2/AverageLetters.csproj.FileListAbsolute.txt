@@ -1,0 +1,10 @@
+C:\Users\dilsh\source\repos\CSC-253\AverageLetters\AverageLetters\bin\Debug\netcoreapp2.2\AverageLetters.deps.json
+C:\Users\dilsh\source\repos\CSC-253\AverageLetters\AverageLetters\bin\Debug\netcoreapp2.2\AverageLetters.runtimeconfig.json
+C:\Users\dilsh\source\repos\CSC-253\AverageLetters\AverageLetters\bin\Debug\netcoreapp2.2\AverageLetters.runtimeconfig.dev.json
+C:\Users\dilsh\source\repos\CSC-253\AverageLetters\AverageLetters\bin\Debug\netcoreapp2.2\AverageLetters.dll
+C:\Users\dilsh\source\repos\CSC-253\AverageLetters\AverageLetters\bin\Debug\netcoreapp2.2\AverageLetters.pdb
+C:\Users\dilsh\source\repos\CSC-253\AverageLetters\AverageLetters\obj\Debug\netcoreapp2.2\AverageLetters.csproj.CoreCompileInputs.cache
+C:\Users\dilsh\source\repos\CSC-253\AverageLetters\AverageLetters\obj\Debug\netcoreapp2.2\AverageLetters.AssemblyInfoInputs.cache
+C:\Users\dilsh\source\repos\CSC-253\AverageLetters\AverageLetters\obj\Debug\netcoreapp2.2\AverageLetters.AssemblyInfo.cs
+C:\Users\dilsh\source\repos\CSC-253\AverageLetters\AverageLetters\obj\Debug\netcoreapp2.2\AverageLetters.dll
+C:\Users\dilsh\source\repos\CSC-253\AverageLetters\AverageLetters\obj\Debug\netcoreapp2.2\AverageLetters.pdb
