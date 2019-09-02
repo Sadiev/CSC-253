@@ -1,0 +1,11 @@
+C:\Users\dilsh\source\repos\CSC-253\WordSeparator\WordSeparator\bin\Debug\netcoreapp2.2\WordSeparator.deps.json
+C:\Users\dilsh\source\repos\CSC-253\WordSeparator\WordSeparator\bin\Debug\netcoreapp2.2\WordSeparator.runtimeconfig.json
+C:\Users\dilsh\source\repos\CSC-253\WordSeparator\WordSeparator\bin\Debug\netcoreapp2.2\WordSeparator.runtimeconfig.dev.json
+C:\Users\dilsh\source\repos\CSC-253\WordSeparator\WordSeparator\bin\Debug\netcoreapp2.2\WordSeparator.dll
+C:\Users\dilsh\source\repos\CSC-253\WordSeparator\WordSeparator\bin\Debug\netcoreapp2.2\WordSeparator.pdb
+C:\Users\dilsh\source\repos\CSC-253\WordSeparator\WordSeparator\obj\Debug\netcoreapp2.2\WordSeparator.csprojAssemblyReference.cache
+C:\Users\dilsh\source\repos\CSC-253\WordSeparator\WordSeparator\obj\Debug\netcoreapp2.2\WordSeparator.csproj.CoreCompileInputs.cache
+C:\Users\dilsh\source\repos\CSC-253\WordSeparator\WordSeparator\obj\Debug\netcoreapp2.2\WordSeparator.AssemblyInfoInputs.cache
+C:\Users\dilsh\source\repos\CSC-253\WordSeparator\WordSeparator\obj\Debug\netcoreapp2.2\WordSeparator.AssemblyInfo.cs
+C:\Users\dilsh\source\repos\CSC-253\WordSeparator\WordSeparator\obj\Debug\netcoreapp2.2\WordSeparator.dll
+C:\Users\dilsh\source\repos\CSC-253\WordSeparator\WordSeparator\obj\Debug\netcoreapp2.2\WordSeparator.pdb
