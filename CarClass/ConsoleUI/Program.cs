@@ -13,7 +13,7 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            Car car = new Car(2017, "Ford");//test
+            Car car = new Car(2017, "Ford");
             while (true)
             {
                 Console.Write("1.Accelerate\n2.Brake\nEnter 1 ,2 or any key to Exit > ");
