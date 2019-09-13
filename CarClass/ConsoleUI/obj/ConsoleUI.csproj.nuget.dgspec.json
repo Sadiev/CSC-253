@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dilsh\\source\\repos\\CarClass\\ConsoleUI\\ConsoleUI.csproj": {}
+    "C:\\Users\\dilsh\\source\\repos\\CSC-253\\CarClass\\ConsoleUI\\ConsoleUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dilsh\\source\\repos\\CarClass\\ConsoleUI\\ConsoleUI.csproj": {
+    "C:\\Users\\dilsh\\source\\repos\\CSC-253\\CarClass\\ConsoleUI\\ConsoleUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dilsh\\source\\repos\\CarClass\\ConsoleUI\\ConsoleUI.csproj",
+        "projectUniqueName": "C:\\Users\\dilsh\\source\\repos\\CSC-253\\CarClass\\ConsoleUI\\ConsoleUI.csproj",
         "projectName": "ConsoleUI",
-        "projectPath": "C:\\Users\\dilsh\\source\\repos\\CarClass\\ConsoleUI\\ConsoleUI.csproj",
+        "projectPath": "C:\\Users\\dilsh\\source\\repos\\CSC-253\\CarClass\\ConsoleUI\\ConsoleUI.csproj",
         "packagesPath": "C:\\Users\\dilsh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dilsh\\source\\repos\\CarClass\\ConsoleUI\\obj\\",
+        "outputPath": "C:\\Users\\dilsh\\source\\repos\\CSC-253\\CarClass\\ConsoleUI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
