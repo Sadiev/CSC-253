@@ -1,0 +1,6 @@
+C:\Users\dilsh\source\repos\CSC-253\RandomNumberFileWriter\ConsoleUI\bin\Release\ConsoleUI.exe.config
+C:\Users\dilsh\source\repos\CSC-253\RandomNumberFileWriter\ConsoleUI\bin\Release\ConsoleUI.exe
+C:\Users\dilsh\source\repos\CSC-253\RandomNumberFileWriter\ConsoleUI\bin\Release\ConsoleUI.pdb
+C:\Users\dilsh\source\repos\CSC-253\RandomNumberFileWriter\ConsoleUI\obj\Release\ConsoleUI.csproj.CoreCompileInputs.cache
+C:\Users\dilsh\source\repos\CSC-253\RandomNumberFileWriter\ConsoleUI\obj\Release\ConsoleUI.exe
+C:\Users\dilsh\source\repos\CSC-253\RandomNumberFileWriter\ConsoleUI\obj\Release\ConsoleUI.pdb
