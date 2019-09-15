@@ -1,0 +1,7 @@
+C:\Users\dilsh\source\repos\CSC-253\RandomNumberFileReader\RandomNumberFileReader\bin\Debug\RandomNumberFileReader.exe.config
+C:\Users\dilsh\source\repos\CSC-253\RandomNumberFileReader\RandomNumberFileReader\bin\Debug\RandomNumberFileReader.exe
+C:\Users\dilsh\source\repos\CSC-253\RandomNumberFileReader\RandomNumberFileReader\bin\Debug\RandomNumberFileReader.pdb
+C:\Users\dilsh\source\repos\CSC-253\RandomNumberFileReader\RandomNumberFileReader\obj\Debug\RandomNumberFileReader.csprojAssemblyReference.cache
+C:\Users\dilsh\source\repos\CSC-253\RandomNumberFileReader\RandomNumberFileReader\obj\Debug\RandomNumberFileReader.csproj.CoreCompileInputs.cache
+C:\Users\dilsh\source\repos\CSC-253\RandomNumberFileReader\RandomNumberFileReader\obj\Debug\RandomNumberFileReader.exe
+C:\Users\dilsh\source\repos\CSC-253\RandomNumberFileReader\RandomNumberFileReader\obj\Debug\RandomNumberFileReader.pdb
