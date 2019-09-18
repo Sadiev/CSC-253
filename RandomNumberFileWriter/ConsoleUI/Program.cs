@@ -20,7 +20,7 @@ namespace ConsoleUI
         {
             int numbers;
             string txt="";
-            string filePath = $"{Directory.GetCurrentDirectory()}\\mynewfile.txt";
+            //string filePath = $"{Directory.GetCurrentDirectory()}\\mynewfile.txt";
             Random rand = new Random();
 
             Console.Write("How many random numbers save in a new file? ");
@@ -33,9 +33,22 @@ namespace ConsoleUI
             {
                 txt += rand.Next(1,100) + (i!=numbers-1?",":"");
             }
-            
-            File.WriteAllText(filePath, txt);
-            Console.WriteLine($"\n{numbers } - numbers have been saved in the file\n'{filePath}'");
+
+            //File.WriteAllText(filePath, txt);
+            try
+            {
+                StreamWriter outputFile;
+                outputFile = File.CreateText("mynewfile.txt");
+                outputFile.Write(txt);
+                outputFile.Close();
+                Console.WriteLine($"\n{numbers} - numbers have been saved in the file mynewfile.txt");
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex);
+            }
+                       
             Console.WriteLine("\nPress any key to exit ...");
             Console.ReadKey();
         }
