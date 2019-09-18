@@ -18,12 +18,15 @@ namespace RandomNumberFileReader
         {
             Console.WriteLine("To read file with numbers copy it in the Application's directory and press 'Enter'.");
             Console.ReadLine();
-            string filePath = $"{Directory.GetCurrentDirectory()}\\mynewfile.txt";
+            //string filePath = $"{Directory.GetCurrentDirectory()}\\mynewfile.txt";
             try
             {
                 //if (!File.Exists(filePath))
-                string txt = File.ReadAllText(filePath);
-                string[] nums = txt.Split(',');
+                StreamReader inputFile;
+                inputFile = File.OpenText("mynewfile.txt");
+                //string txt = File.ReadAllText(filePath);
+                string[] nums = inputFile.ReadLine().Split(',');
+                inputFile.Close();
                 foreach (var item in nums)
                 {
                     Console.WriteLine(item);
@@ -31,10 +34,10 @@ namespace RandomNumberFileReader
                 Console.WriteLine("---------------------------------------");
                 Console.WriteLine($"Total: {nums.Length}");
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                Console.WriteLine($"Error the file can't be read.\nThe file has to located at the \n'{filePath}'\n\nCheck the path and run the program again.");
+                Console.WriteLine(ex);
             }
                        
             Console.ReadLine();
