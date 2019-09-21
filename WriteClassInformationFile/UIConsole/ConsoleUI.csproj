@@ -48,5 +48,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WriteFileLibrary\WriteFileLibrary.csproj">
+      <Project>{D2BEEF0D-324C-41CF-8790-622CEFFFFCD2}</Project>
+      <Name>WriteFileLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

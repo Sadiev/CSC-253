@@ -9,22 +9,21 @@ namespace WriteFileLibrary
 {
     public class WriteFile
     {
-        public static void CreateFile()
+        public static void CreateFile(Person person)
         {
             try
             {
                 StreamWriter outputFile;
-                outputFile.WriteLine();
+                outputFile = File.AppendText("UserInformation");
+                outputFile.WriteLine(person.FirstName);
+                outputFile.WriteLine(person.LastName);
+                outputFile.WriteLine(person.Age);
                 outputFile.Close();
             }
             catch (Exception)
             {
-
-                throw;
-            }
-            
+                Console.WriteLine("Error writing file UserInformation");
+            }           
         }
-        
-
     }
 }
