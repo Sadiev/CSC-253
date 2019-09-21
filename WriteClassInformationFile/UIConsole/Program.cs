@@ -4,7 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WriteFileLibrary;
-
+/**
+* 09/21/2019
+* CSC 253
+* Dilshod Sadiev
+* Write Class Information to File
+*/
 namespace ConsoleUI
 {
     class Program
