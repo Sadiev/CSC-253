@@ -3,7 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/**
+* 10/09/2019
+* CSC 253
+* Dilshod Sadiev
+* Hourly Pay Sorter
+*/
 namespace Personnel
 {
     static class Program

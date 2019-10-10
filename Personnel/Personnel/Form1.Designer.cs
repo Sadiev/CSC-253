@@ -30,10 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.personnelDataSet = new Personnel.PersonnelDataSet();
-            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.employeeTableAdapter = new Personnel.PersonnelDataSetTableAdapters.EmployeeTableAdapter();
-            this.tableAdapterManager = new Personnel.PersonnelDataSetTableAdapters.TableAdapterManager();
             this.employeeBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -48,36 +44,22 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.employeeBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.employeeDataGridView = new System.Windows.Forms.DataGridView();
+            this.ascendingBtn = new System.Windows.Forms.ToolStripButton();
+            this.descendingBtn = new System.Windows.Forms.ToolStripButton();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.personnelDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
+            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.personnelDataSet = new Personnel.PersonnelDataSet();
+            this.employeeTableAdapter = new Personnel.PersonnelDataSetTableAdapters.EmployeeTableAdapter();
+            this.tableAdapterManager = new Personnel.PersonnelDataSetTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingNavigator)).BeginInit();
             this.employeeBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.employeeDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personnelDataSet)).BeginInit();
             this.SuspendLayout();
-            // 
-            // personnelDataSet
-            // 
-            this.personnelDataSet.DataSetName = "PersonnelDataSet";
-            this.personnelDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // employeeBindingSource
-            // 
-            this.employeeBindingSource.DataMember = "Employee";
-            this.employeeBindingSource.DataSource = this.personnelDataSet;
-            // 
-            // employeeTableAdapter
-            // 
-            this.employeeTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.EmployeeTableAdapter = this.employeeTableAdapter;
-            this.tableAdapterManager.UpdateOrder = Personnel.PersonnelDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // employeeBindingNavigator
             // 
@@ -98,7 +80,9 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.employeeBindingNavigatorSaveItem});
+            this.employeeBindingNavigatorSaveItem,
+            this.ascendingBtn,
+            this.descendingBtn});
             this.employeeBindingNavigator.Location = new System.Drawing.Point(0, 0);
             this.employeeBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.employeeBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
@@ -106,7 +90,7 @@
             this.employeeBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.employeeBindingNavigator.Name = "employeeBindingNavigator";
             this.employeeBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.employeeBindingNavigator.Size = new System.Drawing.Size(800, 31);
+            this.employeeBindingNavigator.Size = new System.Drawing.Size(1150, 31);
             this.employeeBindingNavigator.TabIndex = 0;
             this.employeeBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -221,8 +205,28 @@
             this.employeeDataGridView.Name = "employeeDataGridView";
             this.employeeDataGridView.RowHeadersWidth = 51;
             this.employeeDataGridView.RowTemplate.Height = 24;
-            this.employeeDataGridView.Size = new System.Drawing.Size(800, 419);
+            this.employeeDataGridView.Size = new System.Drawing.Size(1150, 419);
             this.employeeDataGridView.TabIndex = 1;
+            // 
+            // ascendingBtn
+            // 
+            this.ascendingBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.ascendingBtn.Image = ((System.Drawing.Image)(resources.GetObject("ascendingBtn.Image")));
+            this.ascendingBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ascendingBtn.Name = "ascendingBtn";
+            this.ascendingBtn.Size = new System.Drawing.Size(201, 28);
+            this.ascendingBtn.Text = "Ascending sort by HourlyPay";
+            this.ascendingBtn.Click += new System.EventHandler(this.ascendingBtn_Click);
+            // 
+            // descendingBtn
+            // 
+            this.descendingBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.descendingBtn.Image = ((System.Drawing.Image)(resources.GetObject("descendingBtn.Image")));
+            this.descendingBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.descendingBtn.Name = "descendingBtn";
+            this.descendingBtn.Size = new System.Drawing.Size(212, 28);
+            this.descendingBtn.Text = "Descending Sort by HourlyPay";
+            this.descendingBtn.Click += new System.EventHandler(this.descendingBtn_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -253,22 +257,42 @@
             this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
+            // employeeBindingSource
+            // 
+            this.employeeBindingSource.DataMember = "Employee";
+            this.employeeBindingSource.DataSource = this.personnelDataSet;
+            // 
+            // personnelDataSet
+            // 
+            this.personnelDataSet.DataSetName = "PersonnelDataSet";
+            this.personnelDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // employeeTableAdapter
+            // 
+            this.employeeTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.EmployeeTableAdapter = this.employeeTableAdapter;
+            this.tableAdapterManager.UpdateOrder = Personnel.PersonnelDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1150, 450);
             this.Controls.Add(this.employeeDataGridView);
             this.Controls.Add(this.employeeBindingNavigator);
             this.Name = "Form1";
             this.Text = "Personnel Database";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.personnelDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingNavigator)).EndInit();
             this.employeeBindingNavigator.ResumeLayout(false);
             this.employeeBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.employeeDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personnelDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -298,6 +322,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.ToolStripButton ascendingBtn;
+        private System.Windows.Forms.ToolStripButton descendingBtn;
     }
 }
 

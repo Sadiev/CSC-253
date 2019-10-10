@@ -31,5 +31,15 @@ namespace Personnel
             this.employeeTableAdapter.Fill(this.personnelDataSet.Employee);
 
         }
+
+        private void ascendingBtn_Click(object sender, EventArgs e)
+        {
+            this.employeeTableAdapter.OrderByAscending(this.personnelDataSet.Employee);
+        }
+
+        private void descendingBtn_Click(object sender, EventArgs e)
+        {
+            this.employeeTableAdapter.OrderByDesc(this.personnelDataSet.Employee);
+        }
     }
 }
