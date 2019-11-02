@@ -45,6 +45,7 @@
     <Compile Include="ProductionWorker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShiftSupervisor.cs" />
+    <Compile Include="TeamLeader.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
