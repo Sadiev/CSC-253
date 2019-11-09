@@ -4,6 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/**
+* 11/09/2019
+* CSC 253
+* Dilshod Sadiev
+* xUnit
+*/
 namespace RetailPriceCalculator
 {
     class Program
