@@ -8,7 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/**
+* 11/13/2019
+* CSC 153
+* Dilshod Sadiev
+* Employee Class WinForm
+*/
 namespace WindowsForms
 {
     public partial class EmployeeForm : Form
