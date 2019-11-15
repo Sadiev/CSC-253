@@ -13,6 +13,13 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
+/**
+* 11/14/2019
+* CSC 253
+* Dilshod Sadiev
+* Create WPF
+*/
 namespace WPFDemo
 {
     /// <summary>
