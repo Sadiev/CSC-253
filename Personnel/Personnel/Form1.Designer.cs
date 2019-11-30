@@ -43,9 +43,14 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.employeeBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.employeeDataGridView = new System.Windows.Forms.DataGridView();
             this.ascendingBtn = new System.Windows.Forms.ToolStripButton();
             this.descendingBtn = new System.Windows.Forms.ToolStripButton();
+            this.employeeDataGridView = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,6 +62,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingNavigator)).BeginInit();
             this.employeeBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.employeeDataGridView)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personnelDataSet)).BeginInit();
             this.SuspendLayout();
@@ -90,7 +96,7 @@
             this.employeeBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.employeeBindingNavigator.Name = "employeeBindingNavigator";
             this.employeeBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.employeeBindingNavigator.Size = new System.Drawing.Size(1150, 31);
+            this.employeeBindingNavigator.Size = new System.Drawing.Size(948, 31);
             this.employeeBindingNavigator.TabIndex = 0;
             this.employeeBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -189,25 +195,6 @@
             this.employeeBindingNavigatorSaveItem.Text = "Save Data";
             this.employeeBindingNavigatorSaveItem.Click += new System.EventHandler(this.employeeBindingNavigatorSaveItem_Click);
             // 
-            // employeeDataGridView
-            // 
-            this.employeeDataGridView.AutoGenerateColumns = false;
-            this.employeeDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.employeeDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.employeeDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4});
-            this.employeeDataGridView.DataSource = this.employeeBindingSource;
-            this.employeeDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.employeeDataGridView.Location = new System.Drawing.Point(0, 31);
-            this.employeeDataGridView.Name = "employeeDataGridView";
-            this.employeeDataGridView.RowHeadersWidth = 51;
-            this.employeeDataGridView.RowTemplate.Height = 24;
-            this.employeeDataGridView.Size = new System.Drawing.Size(1150, 419);
-            this.employeeDataGridView.TabIndex = 1;
-            // 
             // ascendingBtn
             // 
             this.ascendingBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
@@ -227,6 +214,73 @@
             this.descendingBtn.Size = new System.Drawing.Size(212, 28);
             this.descendingBtn.Text = "Descending Sort by HourlyPay";
             this.descendingBtn.Click += new System.EventHandler(this.descendingBtn_Click);
+            // 
+            // employeeDataGridView
+            // 
+            this.employeeDataGridView.AutoGenerateColumns = false;
+            this.employeeDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.employeeDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.employeeDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4});
+            this.employeeDataGridView.DataSource = this.employeeBindingSource;
+            this.employeeDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.employeeDataGridView.Location = new System.Drawing.Point(0, 31);
+            this.employeeDataGridView.Name = "employeeDataGridView";
+            this.employeeDataGridView.RowHeadersWidth = 51;
+            this.employeeDataGridView.RowTemplate.Height = 24;
+            this.employeeDataGridView.Size = new System.Drawing.Size(948, 539);
+            this.employeeDataGridView.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 470);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(948, 100);
+            this.panel1.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(32, 43);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Search";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(91, 38);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(220, 22);
+            this.textBox1.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(346, 35);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(141, 29);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Search";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(547, 35);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(141, 29);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Show all";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -281,7 +335,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1150, 450);
+            this.ClientSize = new System.Drawing.Size(948, 570);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.employeeDataGridView);
             this.Controls.Add(this.employeeBindingNavigator);
             this.Name = "Form1";
@@ -291,6 +346,8 @@
             this.employeeBindingNavigator.ResumeLayout(false);
             this.employeeBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.employeeDataGridView)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personnelDataSet)).EndInit();
             this.ResumeLayout(false);
@@ -324,6 +381,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.ToolStripButton ascendingBtn;
         private System.Windows.Forms.ToolStripButton descendingBtn;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

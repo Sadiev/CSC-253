@@ -41,5 +41,15 @@ namespace Personnel
         {
             this.employeeTableAdapter.OrderByDesc(this.personnelDataSet.Employee);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.employeeTableAdapter.SearchDesc(this.personnelDataSet.Employee, textBox1.Text);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.employeeTableAdapter.Fill(this.personnelDataSet.Employee);
+        }
     }
 }
