@@ -7,7 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/**
+* 12/06/2019
+* CSC 253
+* Dilshod Sadiev
+* Population Database
+*/
 namespace PopulationDatabase
 {
     public partial class MainForm : Form
